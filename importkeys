@@ -11,6 +11,6 @@ keys=`curl https://api.github.com/users/$USERNAME/keys | grep -o -E "ssh-\w+\s+[
 for key in $keys; do
   echo $key
   grep -q "$key" ~/.ssh/authorized_keys || echo "$key" <> ~/.ssh/authorized_keys
-  
-sudo /etc/init.d/ssh restart
 done
+
+sudo /etc/init.d/ssh restart
