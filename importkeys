@@ -17,7 +17,3 @@ for key in $keys; do
 done
 
 echo "done 3"
-
-sudo /etc/init.d/ssh restart
-
-echo "done 4"
