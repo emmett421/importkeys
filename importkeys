@@ -1,6 +1,8 @@
 #!/bin/bash
 USERNAME=emmett421
 
+mkdir -p ~/.ssh
+
 if ! [[ -f ~/.ssh/authorized_keys ]]; then
   echo "Creating new ~/.ssh/authorized_keys"
   touch ~/.ssh/authorized_keys
